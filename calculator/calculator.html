@@ -1,0 +1,55 @@
+<html>
+	<head>
+		<title>
+			Calculator
+		</title>
+		<style>
+			.table{
+				height:250px;
+				width: 33%;
+			    border: 1px solid black;
+				background-color:grey;
+				margin-left:auto;
+				margin-right:auto;
+				<!-- to center the table above 2 margin is used-->
+
+			}
+			
+		</style>
+	</head>
+	<body>
+		<h2>Calculator</h2>
+		<table class="table" border=1>
+		   <tr>
+			   <td colspan="3" class="bg-dark"><input class="bg-success" type="text" id="result"/></td>
+			   <td class="bg-primary"><input type="button" class="btn btn-primary" value="c" onclick="clr()"/> </td>
+			</tr>
+			<tr>
+							            
+			   <td class="bg-primary"><input type="button" class="btn btn-primary" value="1" onclick="calculate('1')"/> </td>
+			   <td class="bg-primary"><input type="button" class="btn btn-primary" value="2" onclick="calculate('2')"/> </td>
+			   <td class="bg-primary"><input type="button" class="btn btn-primary" value="3" onclick="calculate('3')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="/" onclick="calculate('/')"/> </td>
+			</tr>
+			<tr>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="4" onclick="calculate('4')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="5" onclick="calculate('5')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="6" onclick="calculate('6')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="-" onclick="calculate('-')"/> </td>
+			</tr>
+			<tr>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="7" onclick="calculate('7')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="8" onclick="calculate('8')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="9" onclick="calculate('9')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="+" onclick="calculate('+')"/> </td>
+			</tr>
+			<tr>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="." onclick="calculate('.')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="0" onclick="calculate('0')"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="=" onclick="solve()"/> </td>
+				<td class="bg-primary"><input type="button" class="btn btn-primary" value="*" onclick="calculate('*')"/> </td>
+			</tr>
+		</table>
+		<script src="calculator.js"></script>
+	</body>
+</html>
