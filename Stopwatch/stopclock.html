@@ -1,0 +1,42 @@
+<html>
+	<head>
+		<title>
+			Stopclock
+		</title>
+		<style>
+			.total{
+				height:250px;
+				width: 33%;
+			    border: 1px solid black;
+				background-color:grey;
+				padding-left:10px;
+				padding-right:10px;
+				margin-left:auto;
+				margin-right:auto;
+
+			}
+			p{
+				padding-left:50px;
+				background-color:white;
+				height:150px;
+			}
+			span{
+				font-size:150px;
+			}
+			button{
+				font-size:50px;
+				border-radius: 20px;
+			}
+		</style>
+	</head>
+	<body>
+		<h2>StopClock</h2>
+		<div class="total">
+		<p><span id="minutes">00</span><span>:</span><span id="seconds">00</span></p>
+		<button id="start" style="background-color:green">Start</button>
+		<button id="stop" style="background-color:blue">Stop</button>
+		<button id="restart" style="background-color:red">Restart</button>
+		</div>
+		<script src="script.js"></script>
+	</body>
+</html>
