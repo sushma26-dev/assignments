@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>Positive and Negative Numbers</title>
+		<style>
+			.total{
+				height:150px;
+				width: 50%;
+				padding-left:50px;
+				padding-top:50px;
+				background-color:grey;
+				margin-left:auto;
+				margin-right:auto;
+				<!-- to center the table above 2 margin is used-->
+			}
+			label{
+				color:white;
+				padding-bottom:10px;
+				font-size:18px;
+			}
+			
+			.datass{
+				margin-top:10px;
+				border-radius: 20px;
+				font-size:25px;
+				background-color:white;
+			}
+			
+			
+		</style>
+	</head>
+	<script>
+		function getnumber()
+		{
+		
+			var val=document.getElementById('number').value;
+		
+			if(val>=0)
+			{
+				console.log("a is a Positive Numbers  ");
+			}
+			else
+			{
+				console.log("a is a Negative Numbers  ");
+			}
+			
+		
+		}
+	</script>
+	<body>
+	<div style="background-color:grey;" class="total">
+		<label>Enter the number</label>
+		<input type="text" id="number" class="number" >
+		<br>
+		<input type="submit" onclick="getnumber()" class="datass">
+		</div>
+	</body>
+</html>
