@@ -1,7 +1,6 @@
-import logo from './logo.svg';
 import img1 from './img1.jpg';
 import './App.css';
-import Login from './Login';
+import Login from './auth/Login';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 

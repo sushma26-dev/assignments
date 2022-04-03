@@ -62,9 +62,20 @@ function EmpDetailsWithDisplay(){
         updateEmpList(updatedEmpListPush);
         console.log("updated state", updatedEmpListPush);
         event.preventDefault();
-       // resetForm();
+        resetForm();
       //  props.onEmployeeListChange(updatedEmpList);
         // props.onEmployeeListChange(empList); // TODO
+    }
+
+    function resetForm(){
+        userNameSet("");
+        setpno("");
+        setvpno("");
+        updateEmail("");
+        updateAddress("");        
+        updateDesig("");
+        updateGender("");
+
     }
 
     return(

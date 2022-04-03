@@ -118,14 +118,14 @@ function Routing() {
                     */}
                 </Routes>
 
-                {/* // {<Swicth>
+                {/* // {<Switch>
                 //   <Route path='/employees'>
                 //     <EmployeeContainer />
                 //   </Route>
                 //   <Route path='/users'>
                 //     <UserContainer />
                 //   </Route>
-                // </Swicth> } */}
+                // </Switch> } */}
             </HashRouter>
 
 

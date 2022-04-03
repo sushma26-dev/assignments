@@ -1,4 +1,4 @@
-import './App.css';
+import '../App.css';
 import EmpDetails from './EmpDetails';
 import ListEmpDetails from './ListEmpDetails';
 import 'bootstrap/dist/css/bootstrap.min.css';
@@ -23,8 +23,7 @@ function Appnew() {
   }
 
   function onEmpEdit(editObj,index){
-   // console.log("***edit details",editObj);
-   // console.log("***edit details",index);
+  
     setEditObjList(editObj);
     setEditObjIndex(index);
   }
@@ -32,37 +31,19 @@ function Appnew() {
   function deleteEmpList(indexval,i){
     setDeleteObjList(indexval);
     var index = empObjList.indexOf(indexval); 
-    /*The indexOf() method returns the first index at which a given element can be found in the array, or -1 if it is not present. */
     empObjList.splice(index, 1);
 
-    //1.also delete with index->if we want to use this then we pass index (i) 
-   // val from listempdetails
-
-   /* setDeleteObjList(i);
-    var index = empObjList.indexOf(i); 
-    empObjList.splice(i, 1);*/
-
-    /* 2.this method not works->get del in some other index value
-    //indexvalue should be index ,here indexval is object,if we want to use this then we pass index (i) 
-    val from listempdetails-->provide it in empdetails
-
-    const updateList = JSON.parse(JSON.stringify(empObjList));
-    updateList.splice(indexval,0);
-    setEmpObjList(updateList);
-    */
+   
   }
   
   
   return (
       <div className="container">
+        <a href="/"><button className='homebtn'>Back to Home</button></a>
         <div className="row">
             <div className='col-md-6 col-sm-12'>
                 <EmpDetails onEmployeeListChange={updateEmpList}  editobj={editEmpObjList} indexObj={editEmpObjIndex}/>
-                {/* onEmployeeListChange is a props which is send from a child(empdetails) to parent(appnew.js) 
-                initially onEmployeeListChange  has a function with empty value is send to child
-                on child onEmployeeListChange with value is get back,what do u meant by onEmployeeListChange =>is a fn ,
-                so it call that fn with the value that is get from  a child
-                */}
+                
             </div>
             <div className='col-md-6 col-sm-12 listdetails'>
                 <ListEmpDetails employees={empObjList} onEmployeeEdit={onEmpEdit} onEmployeeDelete={deleteEmpList}/>

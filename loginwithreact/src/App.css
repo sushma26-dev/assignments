@@ -121,3 +121,23 @@ h2,h3{
 .nav-link{
   padding-left: 15px;
 }
+.nav-item{
+  padding-right: 10px;
+}
+.home{
+  margin-top: 150px;
+  margin-left: 250px;
+  font-size: 150px;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-style: italic;
+}
+#navbarResponsive{
+  font-size: 20px;
+  padding-left: 740px;
+}
+.homebtn{
+  background-color: black;
+  color: white;
+  margin-top: 10px;
+  margin-left: 990px;
+}

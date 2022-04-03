@@ -1,11 +1,24 @@
-function Dashboard() {
-  const userLoginDetails = JSON.parse(sessionStorage.getItem('loginDetails'));
+//import { useNavigate } from "react-router-dom";
 
+function Dashboard() {
+  // const navigate = useNavigate();
+ 
+
+  const userLoginDetails = JSON.parse(sessionStorage.getItem('loginDetails'));
+  if (userLoginDetails === null) {
+    window.location.href = "#/login";
+    // navigate("/login");
+  }
   const index = userLoginDetails.index;
 
   const totalList = JSON.parse(localStorage.getItem('userList'));
 
   const loginUser = totalList[index];
+
+  function logout(){
+    const rem=sessionStorage.removeItem('loginDetails');
+    window.location.href = "#/login";
+  }
 
   return (
     <div>
@@ -20,7 +33,7 @@ function Dashboard() {
             </li>
 
             <li className="nav-item">
-              <a className="nav-link" href="#/logout">Logout</a>
+              <a className="nav-link" onClick={logout}>Logout</a>
             </li>
 
           </ul>

@@ -92,7 +92,7 @@ function EmpDetails(props){
         updateEmpList(updatedEmpListPush);
        // console.log("updated state", updatedEmpListPush);
         event.preventDefault();
-        //resetForm();
+        resetForm();
         props.onEmployeeListChange(updatedEmpListPush);
         // props.onEmployeeListChange(empList); // TODO
 
@@ -113,8 +113,19 @@ function EmpDetails(props){
         updateEmpList(updatedEmpListPush);
         console.log("updated state", updatedEmpListPush);
         event.preventDefault();
-        //resetForm();
+        resetForm();
         props.onEmployeeListChange(updatedEmpListPush);
+    }
+
+    function resetForm(){
+        userNameSet("");
+        setpno("");
+        setvpno("");
+        updateEmail("");
+        updateAddress("");        
+        updateDesig("");
+        updateGender("");
+
     }
 
     /*useEffect(()=>{
