@@ -6,7 +6,7 @@ import Dashboard from './auth/Dashboard';
 import Invalid from './Invalid';
 import Home from './Home';
 //lazy load
-const App = React.lazy(() => import("./App"));
+const App = React.lazy(() => import("./auth/App"));
 
 function Routing() {
     

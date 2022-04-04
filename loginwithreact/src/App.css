@@ -109,11 +109,18 @@ h2,h3{
   padding: 15px 15px;
   background-color: aliceblue;
   border-radius: 10px;
+  margin-right: 100px;
+  margin-left: 100px;
 }
-.cname,.uname{
+.cname{
   color: white;
+  
+}
+.uname{
+  color: rgb(255, 0, 191);
   text-align: left;
   padding-left: 15px;
+  margin-top: 25px;
 }
 .nav{
   font-size: 25px;
