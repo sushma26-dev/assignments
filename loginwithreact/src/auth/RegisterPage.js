@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 function RegisterPage() {
   const [regname, setName] = useState();
@@ -58,6 +58,20 @@ function RegisterPage() {
     console.log("name is" + regname);
     return (
       <div>
+        <nav className="navbar navbar-expand-lg ">
+                <div className="container">
+                    <span style={{ color: 'white', fontSize: '1.6rem' }}>Amadis </span>
+                    <div id="navbarResponsive">
+                        <ul className="navbar-nav">
+                                <li className='nav-item mx-0 mx-lg-1' >
+                                    <Link to={'/' } className='li' style={{ color: 'white'}}>Home</Link>
+                                </li>
+                            
+                            
+                        </ul>
+                    </div>
+                </div>
+            </nav>
         <div className="row">
           <div className='col-3 welcome'>
             <h2>

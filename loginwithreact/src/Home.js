@@ -11,14 +11,14 @@ function Home(){
 
     return(
         <div>
-            <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+            <nav className="navbar navbar-expand-lg ">
                 <div className="container">
-                    <span style={{ color: 'white', fontSize: '1.6rem' }}>Welcome To Amadis</span>
+                    <span style={{ color: 'white', fontSize: '1.6rem' }}> Amadis</span>
                     <div id="navbarResponsive">
                         <ul className="navbar-nav">
                             {menuItems.map((menu, i) =>
                                 <li className='nav-item mx-0 mx-lg-1' key={i}>
-                                    <Link to={'/' + menu.key} className='li'>{menu.displayName}</Link>
+                                    <Link to={'/' + menu.key} className='li' style={{ color: 'white'}}>{menu.displayName}</Link>
                                 </li>
                             )
                             }
