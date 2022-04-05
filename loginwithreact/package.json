@@ -2,7 +2,7 @@
   "name": "reactproj",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://sushma26-dev.github.io/assignments/loginwithreact/builds",
+  "homepage": "https://sushma26-dev.github.io/assignments/loginwithreact/build",
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.2",
     "@testing-library/react": "^12.1.4",
