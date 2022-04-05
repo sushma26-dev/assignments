@@ -1,0 +1,8 @@
+{
+    "users":[
+        {"name":"user1", "email":"user1@gmail.com","phonenumber":123,"gender":"Female","address":"kk" },
+        {"name":"user2", "email":"user2@gmail.com","phonenumber":123,"gender":"Female","address":"kk"},
+        {"name":"user3", "email":"user3@gmail.com","phonenumber":123,"gender":"Female","address":"kk"}
+        
+    ]
+}  
