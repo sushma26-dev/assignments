@@ -1,0 +1,18 @@
+{
+  "files": {
+    "main.css": "/assignments/loginwithreact/build/static/css/main.fc3f2d33.css",
+    "main.js": "/assignments/loginwithreact/build/static/js/main.ce047e9b.js",
+    "static/js/695.c7078c0a.chunk.js": "/assignments/loginwithreact/build/static/js/695.c7078c0a.chunk.js",
+    "static/js/787.4641eef9.chunk.js": "/assignments/loginwithreact/build/static/js/787.4641eef9.chunk.js",
+    "static/media/img1.jpg": "/assignments/loginwithreact/build/static/media/img1.3388aa914584f8604a0f.jpg",
+    "index.html": "/assignments/loginwithreact/build/index.html",
+    "main.fc3f2d33.css.map": "/assignments/loginwithreact/build/static/css/main.fc3f2d33.css.map",
+    "main.ce047e9b.js.map": "/assignments/loginwithreact/build/static/js/main.ce047e9b.js.map",
+    "695.c7078c0a.chunk.js.map": "/assignments/loginwithreact/build/static/js/695.c7078c0a.chunk.js.map",
+    "787.4641eef9.chunk.js.map": "/assignments/loginwithreact/build/static/js/787.4641eef9.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.fc3f2d33.css",
+    "static/js/main.ce047e9b.js"
+  ]
+}
